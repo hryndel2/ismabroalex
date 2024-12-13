@@ -1,0 +1,167 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Server Chat
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <style>
+  ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgb(39, 39, 39);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    .message-item {
+        transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .message-item:hover {
+        transform: scale(1.02);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .message-item.user-message {
+        justify-content: flex-end;
+    }
+    .message-item.user-message .message-content {
+        background-color: rgba(59, 130, 246, 0.3);
+    }
+ </style>
+ <body class="bg-gray-900 text-white relative">
+  <img alt="A detailed background image with abstract patterns and vibrant colors" class="absolute inset-0 w-full h-full object-cover z-0" height="1080" src="back.jpg" width="1920"/>
+  <div class="absolute inset-0 bg-black opacity-50 z-0">
+  </div>
+  <div class="relative max-w-md mx-auto z-10">
+   <!-- Header -->
+   <div class="fixed top-0 left-0 right-0 flex items-center justify-between p-4 border-b border-gray-700 bg-gray-900 bg-opacity-50 backdrop-blur-md z-10">
+    <a class="text-xl" href="list_chat.html">
+     <i class="fas fa-arrow-left">
+     </i>
+    </a>
+    <h1 class="text-xl font-semibold">
+     Server Chat
+    </h1>
+    <div class="flex space-x-4">
+     <i class="fas fa-search text-xl">
+     </i>
+     <i class="fas fa-ellipsis-v text-xl">
+     </i>
+    </div>
+   </div>
+   <!-- Chat Messages -->
+   <div class="space-y-4 p-4 pt-20 pb-20 overflow-y-auto h-screen">
+    <!-- Message Item -->
+    <div class="flex items-start space-x-4 message-item p-2 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-md">
+     <img alt="User avatar of a person with short hair and glasses" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/iIdepwdATKQrTCDWFeR138AdeuUDYoVduNKH3ZaE7LwqQJ1nA.jpg" width="50"/>
+     <div class="flex-1">
+      <div class="flex justify-between">
+       <h2 class="font-semibold">
+        User 1
+       </h2>
+       <span class="text-gray-500 text-sm">
+        13:11
+       </span>
+      </div>
+      <p class="text-gray-500 text-sm">
+       Hey, how's everyone doing?
+      </p>
+     </div>
+    </div>
+    <!-- Message Item -->
+    <div class="flex items-start space-x-4 message-item p-2 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-md">
+     <img alt="User avatar of a person with long hair and a hat" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/pMRtfPQ37WUUAyfCk7eDRER4fywpYbd5frBWlfcokfvULUS9JA.jpg" width="50"/>
+     <div class="flex-1">
+      <div class="flex justify-between">
+       <h2 class="font-semibold">
+        User 2
+       </h2>
+       <span class="text-gray-500 text-sm">
+        13:12
+       </span>
+      </div>
+      <p class="text-gray-500 text-sm">
+       Doing great! Just working on some code.
+      </p>
+     </div>
+    </div>
+    <!-- Message Item -->
+    <div class="flex items-start space-x-4 message-item p-2 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-md">
+     <img alt="User avatar of a person with curly hair and a beard" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/kq63nMHbE3LeXauOj0mLvUK1J7IuGWNhef8Y6mwTDSfShSqPB.jpg" width="50"/>
+     <div class="flex-1">
+      <div class="flex justify-between">
+       <h2 class="font-semibold">
+        User 3
+       </h2>
+       <span class="text-gray-500 text-sm">
+        13:13
+       </span>
+      </div>
+      <p class="text-gray-500 text-sm">
+       Same here, just finished a project.
+      </p>
+     </div>
+    </div>
+    <!-- User Message Item -->
+    <div class="flex items-start space-x-4 message-item user-message p-2 rounded-lg bg-white-900 bg-opacity-50 backdrop-blur-md">
+        <div class="flex-1 message-content p-2 rounded-lg">
+         <div class="flex justify-between">
+          <span class="text-white-500 text-sm">
+           13:14
+          </span>
+         </div>
+         <p class="text-white-500 text-sm">
+          Awesome! What was the project about?
+         </p>
+        </div>
+       </div>
+    <!-- Message Item -->
+    <div class="flex items-start space-x-4 message-item p-2 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-md">
+     <img alt="User avatar of a person with curly hair and a beard" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/kq63nMHbE3LeXauOj0mLvUK1J7IuGWNhef8Y6mwTDSfShSqPB.jpg" width="50"/>
+     <div class="flex-1">
+      <div class="flex justify-between">
+       <h2 class="font-semibold">
+        User 3
+       </h2>
+       <span class="text-gray-500 text-sm">
+        13:15
+       </span>
+      </div>
+      <p class="text-gray-500 text-sm">
+       It was a web app for managing tasks. Pretty fun to work on!
+      </p>
+     </div>
+    </div>
+    <!-- User Message Item -->
+    <div class="flex items-start space-x-4 message-item user-message p-2 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-md">
+     <div class="flex-1 message-content p-2 rounded-lg">
+      <div class="flex justify-between">
+       <span class="text-gray-500 text-sm">
+        13:16
+       </span>
+      </div>
+      <p class="text-gray-500 text-sm">
+       That sounds interesting! I'd love to see it sometime.
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- Message Input -->
+   <div class="fixed bottom-0 left-0 right-0 flex items-center p-4 border-t border-gray-700 bg-gray-900 bg-opacity-50 backdrop-blur-md z-10">
+    <i class="fas fa-smile text-gray-400 mr-2">
+    </i>
+    <input class="flex-1 bg-gray-700 p-2 rounded-lg text-white" placeholder="Введите сообщение" type="text"/>
+    <i class="fas fa-microphone text-green-500 ml-2">
+    </i>
+   </div>
+  </div>
+ </body>
+</html>

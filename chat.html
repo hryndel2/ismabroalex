@@ -1,0 +1,191 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Chat UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: rgb(39, 39, 39);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white relative">
+    <img
+      alt="A detailed background image with abstract patterns and vibrant colors"
+      class="absolute inset-0 w-full h-full object-cover z-0"
+      height="1080"
+      src="back.jpg"
+      width="1920"
+    />
+    <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+    <div class="max-w-md mx-auto relative z-10">
+      <!-- Header -->
+      <div
+        class="fixed top-0 left-0 right-0 flex items-center justify-between p-4 border-b border-gray-700 bg-gray-900 bg-opacity-50 backdrop-blur-md z-10"
+      >
+        <div class="flex items-center">
+          <a href="friiends.html">
+            <i class="fas fa-arrow-left text-gray-400 mr-2"> </i>
+          </a>
+          <img
+            alt="User  profile picture"
+            class="rounded-full"
+            height="40"
+            src="https://storage.googleapis.com/a1aa/image/cDKoCdPb7dKMEZgw5onxn6DpSMoTqsK2XeXes1ZmLpR5fepPB.jpg"
+            width="40"
+          />
+          <div class="ml-2">
+            <div class="text-lg font-semibold">Ахпер</div>
+            <div class="text-sm text-gray-400">был(-а) сегодня в 17:17</div>
+          </div>
+        </div>
+        <div class="flex space-x-4">
+          <i class="fas fa-video text-gray-400"> </i>
+          <i class="fas fa-phone text-gray-400"> </i>
+          <i class="fas fa-ellipsis-v text-gray-400"> </i>
+        </div>
+      </div>
+      <!-- Messages -->
+      <div class="space-y-4 p-4 pt-20 pb-20 bg-gray-900 bg-opacity-50 backdrop-blur-md rounded-lg">
+        <!-- Yesterday -->
+        <div class="text-center text-gray-400 text-sm">Вчера</div>
+        <div class="flex justify-start">
+          <div class="bg-gray-700 p-2 rounded-lg max-w-xs">
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-phone-alt text-gray-400"> </i>
+              <span class="text-sm"> Аудиозвонок </span>
+            </div>
+            <div class="text-xs text-gray-400">6 с 18:11</div>
+          </div>
+        </div>
+        <div class="flex justify-start">
+          <div class="bg-gray-700 p-2 rounded-lg max-w-xs">
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-phone-alt text-gray-400"> </i>
+              <span class="text-sm"> Аудиозвонок </span>
+            </div>
+            <div class="text-xs text-gray-400">54 мин 21:35</div>
+          </div>
+        </div>
+        <!-- Today -->
+        <div class="text-center text-gray-400 text-sm">Сегодня</div>
+        <div class="flex justify-end">
+          <div class="bg-green-700 p-2 rounded-lg max-w-xs">
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-video text-gray-400"> </i>
+              <span class="text-sm"> Видеозвонок </span>
+            </div>
+            <div class="text-xs text-gray-400">34 мин 19:10</div>
+          </div>
+        </div>
+        <div class="flex justify-end">
+          <div class="bg-green-700 p-2 rounded-lg max-w-xs">
+            <span class="text-sm"> Ахпер </span>
+            <div class="text-xs text-gray-400">21:04</div>
+          </div>
+        </div>
+        <div class="flex justify-end">
+          <div class="bg-green-700 p-2 rounded-lg max-w-xs">
+            <span class="text-sm"> Ахпеерка </span>
+            <div class="text-xs text-gray-400">16:28</div>
+          </div>
+        </div>
+        <div class="flex justify-end">
+            <div class="bg-green-700 p-2 rounded-lg max-w-xs">
+              <span class="text-sm"> Ахпеерка </span>
+              <div class="text-xs text-gray-400">16:28</div>
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <div class="bg-green-700 p-2 rounded-lg max-w-xs">
+              <span class="text-sm"> Ахпеерка </span>
+              <div class="text-xs text-gray-400">16:28</div>
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <div class="bg-green-700 p-2 rounded-lg max-w-xs">
+              <span class="text-sm"> Ахпеерка </span>
+              <div class="text-xs text-gray-400">16:28</div>
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <div class="bg-green-700 p-2 rounded-lg max-w-xs">
+              <span class="text-sm"> Ахпеерка </span>
+              <div class="text-xs text-gray-400">16:28</div>
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <div class="bg-green-700 p-2 rounded-lg max-w-xs">
+              <span class="text-sm"> Ахпеерка </span>
+              <div class="text-xs text-gray-400">16:28</div>
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <div class="bg-green-700 p-2 rounded-lg max-w-xs">
+              <span class="text-sm"> Ахпеерка </span>
+              <div class="text-xs text-gray-400">16:28</div>
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <div class="bg-green-700 p-2 rounded-lg max-w-xs">
+              <span class="text-sm"> Ахпеерка </span>
+              <div class="text-xs text-gray-400">16:28</div>
+            </div>
+          </div>
+          
+        <div class="flex justify-end">
+          <div class="bg-green-700 p-2 rounded-lg max-w-xs">
+            <span class="text-sm"> Ты дома? </span>
+            <div class="text-xs text-gray-400">16:29</div>
+          </div>
+        </div>
+        <!-- Unread message -->
+        <div class="text-center text-gray-400 text-sm">
+          1 непрочитанное сообщение
+        </div>
+        <div class="flex justify-start">
+          <div class="bg-gray-700 p-2 rounded-lg max-w-xs">
+            <span class="text-sm"> Да </span>
+            <div class="text-xs text-gray-400">16:34</div>
+          </div>
+        </div>
+        <div class="flex justify-start">
+          <div class="bg-gray-700 p-2 rounded-lg max-w-xs">
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-phone-alt text-gray-400"> </i>
+              <span class="text-sm"> Аудиозвонок </span>
+            </div>
+            <div class="text-xs text-gray-400">
+              Звонок начался • Нажмите, чтобы вернуться 16:34
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="fixed bottom-0 left-0 right-0 flex items-center p-4 border-t border-gray-700 bg-gray-900 bg-opacity-50 backdrop-blur-md z-10"
+      >
+        <i class="fas fa-smile text-gray-400 mr-2"> </i>
+        <input
+          class="flex-1 bg-gray-700 p-2 rounded-lg text-white"
+          placeholder="Введите сообщение"
+          type="text"
+        />
+        <i class="fas fa-microphone text-green-500 ml-2"> </i>
+      </div>
+    </div>
+  </body>
+</html>

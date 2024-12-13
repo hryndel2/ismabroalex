@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ismarik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: rgb(39, 39, 39);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Новый стиль для эффекта наведения на элементы списка звонков */
+      .call-item {
+        transition: transform 0.2s ease, background-color 0.2s ease;
+      }
+
+      .call-item:hover {
+        transform: scale(1.02);
+        background-color: rgba(255, 255, 255, 0.1); /* Измените цвет фона по желанию */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white relative">
+    <img
+      alt="A detailed background image with abstract patterns and vibrant colors"
+      class="absolute inset-0 w-full h-full object-cover z-0"
+      height="1080"
+      src="back.jpg"
+      width="1920"
+    />
+    <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+    <div class="max-w-md mx-auto relative z-10">
+      <!-- Header -->
+      <div
+        class="fixed top-0 left-0 right-0 flex items-center justify-between p-4 border-b border-gray-700 bg-gray-900 bg-opacity-50 backdrop-blur-md z-10"
+      >
+        <h1 class="text-xl font-semibold">isma</h1>
+        <div class="flex space-x-4">
+          <i class="fas fa-search text-xl"> </i>
+          <i class="fas fa-ellipsis-v text-xl"> </i>
+        </div>
+      </div>
+      <!-- СПИСОК ЗВОНКОВ -->
+      <div class="space-y-4 p-4 pt-20 pb-20">
+        <div class="flex items-center justify-between call-item p-2 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-md">
+          <div class="flex items-center space-x-4">
+            <img
+              alt="Profile picture"
+              class="rounded-full"
+              height="40"
+              src="https://placehold.co/40x40"
+              width="40"
+            />
+            <div>
+              <p>Ахпер</p>
+              <p class="text-sm text-green-500">✔ Вчера, 15:56</p>
+            </div>
+          </div>
+          <i class="fas fa-phone text-xl"> </i>
+        </div>
+
+        <!-- ПРОПУЩЕННЫЙ ВЫЗОВ-->
+        <div class="flex items-center justify-between call-item p-2 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-md">
+          <div class="flex items-center space-x-4">
+            <img
+              alt="Profile picture"
+              class="rounded-full"
+              height="40"
+              src="https://placehold.co/40x40"
+              width="40"
+            />
+            <div>
+              <p class="text-red-500">Ахпер</p>
+              <p class="text-sm text-red-500">↙ Вчера, 21:16</p>
+            </div>
+          </div>
+          <i class="fas fa-phone text-xl"> </i>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="fixed bottom-0 left-0 right-0 flex justify-between p-4 border-t border-gray-700 bg-gray-900 bg-opacity-50 backdrop-blur-md z-10"
+      >
+        <div class="relative">
+          <a href="index.html">
+            <i class="fas fa-comment-dots text-xl"> </i>
+          </a>
+          <span
+            class="absolute top-0 right-0 bg-green-500 text-white text-xs rounded-full px-1">
+          </span>
+        </div>
+        <a href="friiends.html">
+          <i class="fas fa-user-friends text-xl"></i>
+        </a>
+        <a href="list_phone.html">
+          <i class="fas fa-phone-alt text-xl"> </i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
